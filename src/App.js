@@ -12,6 +12,7 @@ import Teacherhome from "./component/layout/Teacherhome";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer} from 'react-toastify';
 import Subcategory from "./component/user/Subcategory";
+import Product from "./component/user/Product";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path="/login" element={<Login/>}/>
             </Route>
             <Route path="/subcat" element={<Subcategory/>}/>
+            <Route path="/product" element={<Product/>}/>
 
             <Route path="/teacher" element={<Teacher/>}>
                 <Route path="/teacher" element={<Teacherhome/>}/>
