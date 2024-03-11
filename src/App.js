@@ -11,6 +11,7 @@ import TLogin from "./component/pages/TLogin";
 import Teacherhome from "./component/layout/Teacherhome";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer} from 'react-toastify';
+import Subcategory from "./component/user/Subcategory";
 
 
 function App() {
@@ -25,14 +26,14 @@ function App() {
             <Route path="/contact" element={<Contact/>}/>
             <Route path="/courses" element={<Courses/>}/>
             <Route path="/login" element={<Login/>}/>
-
             </Route>
+            <Route path="/subcat" element={<Subcategory/>}/>
 
             <Route path="/teacher" element={<Teacher/>}>
                 <Route path="/teacher" element={<Teacherhome/>}/>
                 <Route path="/teacher/Tlogin" element={<TLogin/>}/>
             </Route>
-
+             
             <Route path="/*" element={<Error/>}/>
          </Routes>
       </BrowserRouter>
