@@ -19,6 +19,10 @@ import { ToastContainer} from 'react-toastify';
 import ContactRegister from "./component/user/ContactRegister";
 import LoginForm from "./component/user/LoginForm";
 import StudentRegister from "./component/user/StudentRegister";
+import CategoryAdd from "./component/admin/CategoryAdd";
+import AdminLogin from "./component/auth/AdminLogin";
+import AddSubCat from "./component/admin/AddSubCat";
+import AddProduct from "./component/admin/AddProduct";
 
 
 function App() {
@@ -51,6 +55,11 @@ function App() {
             <Route path="/admin/register" element={<ContactRegister/>}/>
             <Route path="/admin/studentregister" element={<StudentRegister/>}/>
             <Route path="/admin/stulogin" element={<LoginForm/>}/>
+            <Route path="/admin/category/add" element={<CategoryAdd/>}/>
+            <Route path="/admin/adminlogin" element={<AdminLogin/>}/>
+            <Route path="/conregister" element={<ContactRegister/>}/>
+            <Route path="/addsubcat" element={<AddSubCat/>}/>
+            <Route path="/addProduct" element={<AddProduct/>}/>
 
             <Route path="/*" element={<Error/>}/>
          </Routes>

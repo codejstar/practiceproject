@@ -20,6 +20,7 @@ const LoginForm = () => {
 
        axios.post('https://kizaapi.ksesystem.com/api/user/login',data)
        .then((res) => {
+        console.log(res);
         if(res.data.success){
             toast.success(res.data.message)
             console.log(res.data);
